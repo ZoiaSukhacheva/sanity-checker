@@ -1,0 +1,30 @@
+{
+  "name": "sanity",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "Checks if environment is ready for functional tests",
+  "main": "./app",
+  "scripts": {
+    "build": "webpack -p",
+    "start:dev": "webpack-dev-server --mode development",
+    "mock:api": "json-server --watch api/env.json --port 4000"
+  },
+  "author": "Zoia Sukhachova",
+  "license": "",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "camelcase": "^5.0.0",
+    "json-server": "^0.15.1",
+    "react": "^16.5.2",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.5.2",
+    "rest": "^2.0.0"
+  }
+}
